@@ -1,0 +1,13 @@
+diff --git a/node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts b/node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts
+index 3366f5a..b9eacc6 100644
+--- a/node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts
++++ b/node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts
+@@ -1493,7 +1493,7 @@ type NativeElements = {
+ 
+ declare global {
+   namespace JSX {
+-    interface Element extends VNode {}
++    // interface Element extends VNode {}
+     interface ElementClass {
+       $props: {}
+     }

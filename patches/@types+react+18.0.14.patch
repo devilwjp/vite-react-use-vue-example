@@ -1,0 +1,15 @@
+diff --git a/node_modules/@types/react/index.d.ts b/node_modules/@types/react/index.d.ts
+index 5c5d343..2811784 100644
+--- a/node_modules/@types/react/index.d.ts
++++ b/node_modules/@types/react/index.d.ts
+@@ -3118,7 +3118,9 @@ type ReactManagedAttributes<C, P> = C extends { propTypes: infer T; defaultProps
+ 
+ declare global {
+     namespace JSX {
+-        interface Element extends React.ReactElement<any, any> { }
++        interface Element extends React.ReactElement<any, any> {
++            [k: string]: any
++         }
+         interface ElementClass extends React.Component<any> {
+             render(): React.ReactNode;
+         }
